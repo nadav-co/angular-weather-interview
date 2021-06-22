@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+.fav-list{
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    a{
+        cursor: pointer;
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        font-size: 1.3em;
+        background-color: rgb(219, 219, 219);
+        &:nth-child(2n){
+            background-color: rgb(241, 241, 241);
+        }
+        &:hover{
+            background-color: rgb(224, 31, 166);
+            color: #fff;
+        }
+    }
+}

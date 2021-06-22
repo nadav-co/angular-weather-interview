@@ -1,0 +1,6 @@
+<main class="favs">
+    <h1>Your Favorite  Locations</h1>
+    <div class="fav-list">
+        <a routerLink="{{'/weather/' + fav.key + '/' + fav.name}}" *ngFor="let fav of favs">{{fav.name}}</a>
+    </div>
+</main>

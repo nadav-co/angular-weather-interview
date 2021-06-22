@@ -1,0 +1,15 @@
+<main class="weather">
+    <input [(ngModel)]="searchValue" (ngModelChange)="handleChange()" type="text" placeholder="Search city">
+    <section class="search-res">
+        <div *ngIf="searchRes">
+            <a routerLink="{{'/weather/' + res.Key + '/' + res.LocalizedName}}" *ngFor="let res of searchRes"
+                href="">{{res.LocalizedName}}<small> - {{res.Country.LocalizedName}}</small></a>
+        </div>
+    </section>
+    <h1 *ngIf="weatherData">
+        <span *ngIf="weatherData.isFav" (click)="toggleFav()">&#x2605;</span>
+        <span *ngIf="!weatherData.isFav" (click)="toggleFav()">&#x2606;</span>
+        {{weatherData.name}}
+    </h1>
+    <day-list *ngIf="weatherData" [forecasts]="weatherData.DailyForecasts"></day-list>
+</main>

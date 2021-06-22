@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+$clr1: rgb(53, 53, 53);
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    color: clr1;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: $clr1;
+}
+input:focus{
+    outline: 0;
+}

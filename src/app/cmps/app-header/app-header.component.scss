@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(202, 202, 202);
+    height: 40px;
+    nav{
+        display: flex;
+    }
+    a{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height: 100%;
+        &:not(.icon):hover{
+            background-color: rgb(224, 31, 166);
+            color: white;
+        }
+        &.icon{
+            font-family: cursive, fantasy, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
+}
